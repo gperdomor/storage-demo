@@ -4,6 +4,10 @@ import Vapor
 final class TodoController {
     /// Returns a list of all `Todo`s.
     func index(_ req: Request) throws -> Future<[Todo]> {
+        let logger = try req.make(Logger.self)
+        
+        logger.info("You request index todo")
+
         return Todo.query(on: req).all()
     }
 
@@ -16,7 +20,7 @@ final class TodoController {
 
     /// Deletes a parameterized `Todo`.
     func delete(_ req: Request) throws -> Future<HTTPStatus> {
-        return try req.parameter(Todo.self).flatMap(to: Void.self) { todo in
+        return try req.parameters.next(Todo.self).flatMap(to: Void.self) { todo in
             return todo.delete(on: req)
         }.transform(to: .ok)
     }

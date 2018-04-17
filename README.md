@@ -1,20 +1,24 @@
-<p align="center">
-    <img src="https://user-images.githubusercontent.com/1342803/36623515-7293b4ec-18d3-11e8-85ab-4e2f8fb38fbd.png" width="320" alt="API Template">
-    <br>
-    <br>
-    <a href="http://docs.vapor.codes/3.0/">
-        <img src="http://img.shields.io/badge/read_the-docs-2196f3.svg" alt="Documentation">
-    </a>
-    <a href="http://vapor.team">
-        <img src="http://vapor.team/badge.svg" alt="Slack Team">
-    </a>
-    <a href="LICENSE">
-        <img src="http://img.shields.io/badge/license-MIT-brightgreen.svg" alt="MIT License">
-    </a>
-    <a href="https://circleci.com/gh/vapor/api-template">
-        <img src="https://circleci.com/gh/vapor/api-template.svg?style=shield" alt="Continuous Integration">
-    </a>
-    <a href="https://swift.org">
-        <img src="http://img.shields.io/badge/swift-4.1-brightgreen.svg" alt="Swift 4.1">
-    </a>
-</center>
+[![Swift Version](https://img.shields.io/badge/Swift-4.1-brightgreen.svg)](https://swift.org)
+[![Vapor Version](https://img.shields.io/badge/Vapor-3-brightgreen.svg)](https://vapor.codes)
+[![Build Status](https://img.shields.io/circleci/project/github/gperdomor/storage-demo.svg)](https://circleci.com/gh/gperdomor/storage-demo)
+[![codecov](https://codecov.io/gh/gperdomor/storage-demo/branch/master/graph/badge.svg)](https://codecov.io/gh/gperdomor/storage-demo)
+[![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE)
+
+# Storage Demo
+
+This project provide a usage demo of storage kit and the storage providers fro Vapor 3
+
+This package is based on [StorageKit](https://github.com/gperdomor/storage-kit)
+
+## Learn More
+
+* [StorageKit](https://github.com/gperdomor/storage-kit)
+* [LocalStorage](https://github.com/gperdomor/local-storage)
+
+## Credits
+
+This project is developed and maintained by [Gustavo Perdomo](https://github.com/gperdomor)
+
+## License
+
+This project is released under the [MIT License](LICENSE).
