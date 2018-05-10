@@ -1,20 +1,13 @@
 import Routing
+import LocalStorage
+import MinioStorage
 import Vapor
 
 /// Register your application's routes here.
 ///
 /// [Learn More →](https://docs.vapor.codes/3.0/getting-started/structure/#routesswift)
 public func routes(_ router: Router) throws {
-    // Basic "Hello, world!" example
-    router.get("hello") { _ in
-        return "Hello, world!"
-    }
-
     // Example of configuring a controller
-    let todoController = TodoController()
-    router.get("todos", use: todoController.index)
-    router.post("todos", use: todoController.create)
-    router.delete("todos", Todo.parameter, use: todoController.delete)
-    
-    try  router.register(collection: StorageController())
+    try  router.register(collection: StorageController(path: "local", adadperIdentifier: .local))
+    try  router.register(collection: StorageController(path: "minio", adadperIdentifier: .minio))
 }
