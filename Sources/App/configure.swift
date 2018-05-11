@@ -30,10 +30,10 @@ public func configure(
     middlewares.use(ErrorMiddleware.self) // Catches errors and converts to HTTP response
     services.register(middlewares)
 
-    let rootDirectory = DirectoryConfig.detect().workDir
+    let rootDirectory = DirectoryConfig.detect().workDir.finished(with: "/")
 
     var adapters = AdapterConfig()
-    adapters.add(adapter: try LocalAdapter(rootDirectory: URL(fileURLWithPath: "\(rootDirectory)Public/buckets"), create: true), as: .local)
-    adapters.add(adapter: try MinioAdapter(host: "http://localhost:9000", accessKey: "", secretKey: "", region: .usEast1, securityToken: nil), as: .minio)
+    adapters.add(adapter: try LocalAdapter(rootDirectory: "\(rootDirectory)Public/buckets"), as: .local)
+    adapters.add(adapter: try MinioAdapter(host: "http://localhost:9000/", accessKey: "2OMW9VEY110EO1O4XUC1", secretKey: "158DxM+CQ4O6CAwYhZNS18VfUFSSoge7lpxh5ubL", region: .usEast1, securityToken: nil), as: .minio)
     services.register(adapters)
 }

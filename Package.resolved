@@ -47,6 +47,15 @@
         }
       },
       {
+        "package": "Files",
+        "repositoryURL": "https://github.com/JohnSundell/Files.git",
+        "state": {
+          "branch": null,
+          "revision": "06f95bd1bf4f8d5f50bc6bb30b808c253acd4c88",
+          "version": "2.2.1"
+        }
+      },
+      {
         "package": "HTTP",
         "repositoryURL": "https://github.com/vapor/http.git",
         "state": {
@@ -60,7 +69,7 @@
         "repositoryURL": "https://github.com/gperdomor/local-storage.git",
         "state": {
           "branch": "beta",
-          "revision": "0e932ed4d36f9dbd85492745cfee6dbfb39d40d3",
+          "revision": "407dc9823fd77b0b83b62704c5a4867b98b3691b",
           "version": null
         }
       },
@@ -69,7 +78,7 @@
         "repositoryURL": "https://github.com/gperdomor/minio-storage.git",
         "state": {
           "branch": "beta",
-          "revision": "21c2bb385e212d193ddad79b20a7ccf33f12da0b",
+          "revision": "6fb33690abbe6e12b680c2d200f6fdbd8dbc3e48",
           "version": null
         }
       },
